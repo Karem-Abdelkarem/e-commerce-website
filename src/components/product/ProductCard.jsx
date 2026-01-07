@@ -7,7 +7,7 @@ const ProductCard = ({ item }) => {
   const { t } = useTranslation();
 
   return (
-    <article className="font-poppins w-67.5">
+    <article className="font-poppins w-67.5 mx-auto">
       <div className=" relative group flex items-center justify-center w-67.5 h-62.5 bg-muted rounded-md mb-4 overflow-hidden">
         {item.discount && (
           <span className=" absolute top-0 left-0 bg-secondary text-white text-[12px] rounded-md py-1 px-3 m-3">

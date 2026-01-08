@@ -14,6 +14,11 @@ const ProductCard = ({ item }) => {
             -{item.discount}%
           </span>
         )}
+        {item.state && (
+          <span className=" absolute top-0 left-0 bg-destructive text-white text-[12px] rounded-md py-1 px-3 m-3">
+            {t("new")}
+          </span>
+        )}
         <div className="absolute top-0 right-0 flex flex-col gap-2 m-3">
           <span className="flex items-center justify-center bg-white rounded-full size-8.5 cursor-pointer">
             <img src={wishListIcon} alt="" />

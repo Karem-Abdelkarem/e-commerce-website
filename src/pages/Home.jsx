@@ -5,6 +5,7 @@ import Featured from "../components/layout/Featured";
 import FlashSale from "../components/layout/FlashSale";
 import HeroSection from "../components/layout/HeroSection";
 import OurProducts from "../components/layout/OurProducts";
+import Services from "../components/layout/Services";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Banner />
       <OurProducts />
       <Featured />
+      <Services />
     </>
   );
 };

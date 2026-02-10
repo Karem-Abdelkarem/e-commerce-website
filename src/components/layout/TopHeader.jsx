@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const TopHeader = () => {
   const { t, i18n } = useTranslation();
@@ -8,9 +9,9 @@ const TopHeader = () => {
       <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between sm:gap-35.5 md:gap-57.5 max-w-215">
         <p className="text-center text-sm">
           {t("topHeader")}
-          <a href="#" className="ms-2 font-semibold underline">
+          <Link to="/shop" className="ms-2 font-semibold underline">
             {t("shop")}
-          </a>
+          </Link>
         </p>
         <select
           value={i18n.language}

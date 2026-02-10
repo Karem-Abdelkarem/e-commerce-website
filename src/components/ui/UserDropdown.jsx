@@ -56,21 +56,27 @@ function UserDropdown({ open, onOpenChange }) {
         align="end"
         className="w-64 rounded-2xl bg-black/50 backdrop-blur-xl border border-white/30 shadow-xl text-white p-2"
       >
-        <DropdownMenuItem>
-          <Link to="/account" className="flex items-center gap-4">
-            <img src={user} alt="" /> Manage my account
-          </Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Link to="/account/my-orders" className="flex items-center gap-4">
-            <img src={mallbag} alt="" /> My orders
-          </Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Link to="/account/cancellations" className="flex items-center gap-4">
-            <img src={cancel} alt="" /> My cancellations
-          </Link>
-        </DropdownMenuItem>
+        <Link to="/account">
+          <DropdownMenuItem>
+            <div className="flex items-center gap-4 cursor-pointer">
+              <img src={user} alt="" /> Manage my account
+            </div>
+          </DropdownMenuItem>
+        </Link>
+        <Link to="/account/my-orders">
+          <DropdownMenuItem>
+            <div className="flex items-center gap-4 cursor-pointer">
+              <img src={mallbag} alt="" /> My orders
+            </div>
+          </DropdownMenuItem>
+        </Link>
+        <Link to="/account/cancellations">
+          <DropdownMenuItem>
+            <div className="flex items-center gap-4 cursor-pointer">
+              <img src={cancel} alt="" /> My cancellations
+            </div>
+          </DropdownMenuItem>
+        </Link>
         <DropdownMenuItem>
           <img src={review} alt="" /> My reviews
         </DropdownMenuItem>

@@ -8,6 +8,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { Link } from "react-router-dom";
 
 export function HeroCarousel() {
   const [api, setApi] = React.useState(null);
@@ -40,7 +41,7 @@ export function HeroCarousel() {
   ];
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
 
   React.useEffect(() => {
@@ -86,7 +87,7 @@ export function HeroCarousel() {
                   {slide.title}
                 </h2>
                 <button className="flex items-center gap-2 mt-2 mx-auto md:mx-0 text-sm sm:text-lg font-poppins font-medium hover:underline">
-                  <a href="#">{t("Shop Now")}</a>
+                  <Link to="/shop">{t("Shop Now")}</Link>
                   <img
                     src={arrowRight}
                     alt=""

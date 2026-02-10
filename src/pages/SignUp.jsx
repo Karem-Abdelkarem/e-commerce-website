@@ -34,7 +34,7 @@ const SignUp = () => {
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         data.email,
-        data.password
+        data.password,
       );
 
       const user = userCredential.user;
@@ -42,6 +42,7 @@ const SignUp = () => {
       console.log("User created successfully!");
 
       await setDoc(doc(db, "users", user.uid), {
+        firstName: data.name,
         email: user.email,
         role: "user",
         createdAt: serverTimestamp(),
@@ -84,6 +85,7 @@ const SignUp = () => {
 
       if (!userSnap.exists()) {
         await setDoc(userRef, {
+          firstName: user.displayName || "",
           email: user.email,
           role: "user",
           createdAt: serverTimestamp(),
@@ -112,6 +114,19 @@ const SignUp = () => {
           <p className="font-poppins text-[16px]">{t("signup.subtitle")}</p>
         </div>
         <form className="flex flex-col gap-1.5" onSubmit={handleSubmit(signUp)}>
+          <label className="sr-only">Name</label>
+          <input
+            {...register("name", {
+              required: "Name is required",
+            })}
+            className="border-b-2 w-full outline-0 p-2"
+            type="text"
+            placeholder={t("signup.name")}
+          />
+          <p className="h-9 text-accent font-medium p-2 rounded-md">
+            {errors.name?.message}
+          </p>
+
           <label className="sr-only">Email</label>
           <input
             {...register("email", {
@@ -125,7 +140,7 @@ const SignUp = () => {
             type="text"
             placeholder={t("signup.email")}
           />
-          <p className="h-11 text-accent font-medium p-2 rounded-md">
+          <p className="h-9 text-accent font-medium p-2 rounded-md">
             {errors.email?.message}
           </p>
 
@@ -142,7 +157,7 @@ const SignUp = () => {
             type="password"
             placeholder={t("signup.password")}
           />
-          <p className="h-11 text-accent font-medium p-2 rounded-md">
+          <p className="h-9 text-accent font-medium p-2 rounded-md">
             {errors.password?.message}
           </p>
 

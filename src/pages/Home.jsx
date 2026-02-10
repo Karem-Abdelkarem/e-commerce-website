@@ -1,3 +1,4 @@
+import ScrollToTop from "../components/common/ScrollToTop";
 import Banner from "../components/layout/Banner";
 import BestSelling from "../components/layout/BestSelling";
 import Categories from "../components/layout/Categories";
@@ -11,6 +12,7 @@ const Home = () => {
   return (
     <>
       <HeroSection />
+      <ScrollToTop />
       <FlashSale />
       <Categories />
       <BestSelling />

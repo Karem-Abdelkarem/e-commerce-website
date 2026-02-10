@@ -4,6 +4,7 @@ import TopHeader from "./components/layout/TopHeader";
 import Footer from "./components/layout/Footer";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Toaster } from "react-hot-toast";
 
 const Layout = () => {
   const { t, i18n } = useTranslation();
@@ -15,6 +16,7 @@ const Layout = () => {
 
   return (
     <>
+      <Toaster position="top-right" />
       <TopHeader />
       <Navbar />
       <Outlet />

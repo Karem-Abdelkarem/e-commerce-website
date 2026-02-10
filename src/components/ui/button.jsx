@@ -14,7 +14,7 @@ const buttonVariants = cva(
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "bg-white text-primary border font-poppins font-medium px-12 py-4 rounded-md hover:bg-primary hover:text-white",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
@@ -22,7 +22,7 @@ const buttonVariants = cva(
       size: {
         default: "w-fit px-12 py-4 has-[>svg]:px-3",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+        lg: "w-full px-12 py-4 has-[>svg]:px-3",
         icon: "size-9",
         "icon-sm": "size-8",
         "icon-lg": "size-10",
@@ -32,7 +32,7 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 function Button({

@@ -101,6 +101,8 @@ export const CartProvider = ({ children }) => {
   }, [user, authLoading]);
 
   const addToCart = (product) => {
+    const quantityToAdd = product.quantity || 1;
+
     const existingItem = cart.items.find((item) => item.id === product.id);
 
     let updatedItems;
@@ -108,17 +110,20 @@ export const CartProvider = ({ children }) => {
     if (existingItem) {
       updatedItems = cart.items.map((item) =>
         item.id === product.id
-          ? { ...item, quantity: item.quantity + 1 }
+          ? {
+              ...item,
+              quantity: item.quantity + quantityToAdd,
+            }
           : item,
       );
     } else {
-      updatedItems = [...cart.items, { ...product, quantity: 1 }];
+      updatedItems = [...cart.items, { ...product, quantity: quantityToAdd }];
     }
 
     const updatedCart = {
       items: updatedItems,
-      totalQuantity: cart.totalQuantity + 1,
-      totalPrice: cart.totalPrice + product.price,
+      totalQuantity: cart.totalQuantity + quantityToAdd,
+      totalPrice: cart.totalPrice + product.price * quantityToAdd,
     };
 
     setCart(updatedCart);

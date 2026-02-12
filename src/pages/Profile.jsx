@@ -18,7 +18,7 @@ const Profile = () => {
               type="text"
               id="name"
               name="name"
-              placeholder={user?.firstName || "Rimel"}
+              defaultValue={user?.firstName || "john"}
             />
           </div>
           <div className="w-82.5">
@@ -40,7 +40,7 @@ const Profile = () => {
               type="email"
               id="email"
               name="email"
-              placeholder={user?.email || "user@example.com"}
+              defaultValue={user?.email || "user@example.com"}
             />
           </div>
           <div className="w-82.5">

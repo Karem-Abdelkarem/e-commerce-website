@@ -23,12 +23,9 @@ const ProductInfo = ({
   const [quantity, setQuantity] = useState(1);
   const { setCheckoutData } = useCheckout();
 
-  //console.log(checkoutData);
-
   const navigate = useNavigate();
 
   const handleBuyNow = () => {
-    // 1️⃣ validation
     if (product.colors && !selectedColor) {
       toast.error("Please select a color");
       return;
@@ -39,19 +36,17 @@ const ProductInfo = ({
       return;
     }
 
-    // 2️⃣ build checkout item
     const checkoutItem = {
       id: product.id,
       title: product.title,
       price: product.price,
-      quantity: 1,
+      quantity: quantity,
       color: selectedColor || null,
       size: selectedSize || null,
       imageSrc:
         product.imagesByColor?.[selectedColor]?.[0] || product.images?.[0],
     };
 
-    // 3️⃣ save checkout data
     setCheckoutData({
       items: [checkoutItem],
       total: product.price,
@@ -59,7 +54,6 @@ const ProductInfo = ({
       billingData: null,
     });
 
-    // 4️⃣ navigate
     navigate("/checkout");
   };
 

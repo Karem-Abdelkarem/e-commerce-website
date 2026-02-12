@@ -12,7 +12,6 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import MyAcount from "./pages/MyAcount";
 import Bill from "./pages/Bill";
-import MyOrders from "./pages/MyOrders";
 import ProductDetails from "./pages/ProductDetails";
 import ErrorPage from "./pages/ErrorPage";
 import Profile from "./pages/Profile";
@@ -20,6 +19,7 @@ import AddressBook from "./pages/AddressBook";
 import PaymentOptions from "./pages/PaymentOptions";
 import MyReturns from "./pages/MyReturns";
 import MyCancellations from "./pages/MyCancellations";
+import Orders from "./pages/Orders";
 
 let router = createBrowserRouter([
   {
@@ -88,7 +88,7 @@ let router = createBrowserRouter([
           },
           {
             path: "/account/my-orders",
-            Component: MyOrders,
+            Component: Orders,
           },
           {
             path: "/account/returns",

@@ -12,7 +12,7 @@ import logoutIcon from "@/assets/icons/icon-logout.svg";
 import { useAuth } from "../../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 
-function UserDropdown({ open, onOpenChange }) {
+function UserDropdown() {
   const { logout } = useAuth();
   const navigate = useNavigate();
 
@@ -26,7 +26,7 @@ function UserDropdown({ open, onOpenChange }) {
   };
 
   return (
-    <DropdownMenu open={open} onOpenChange={onOpenChange}>
+    <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <button className="group hover:bg-secondary w-8 h-8 rounded-full transition outline-0 cursor-pointer">
           <svg

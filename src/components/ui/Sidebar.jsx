@@ -21,7 +21,6 @@ const Sidebar = () => {
           to={"/shop"}
           key={category}
           className="block rounded-md p-2 hover:bg-muted"
-          href="#"
         >
           {category}
         </Link>

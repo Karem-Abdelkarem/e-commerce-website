@@ -1,11 +1,11 @@
 import searchIcon from "@/assets/icons/search.svg";
 import wishlistIcon from "@/assets/icons/wishlist.svg";
 import cartIcon from "@/assets/icons/cart.svg";
-import UserDropdown from "./UserDropdown";
-import { useAuth } from "../../context/AuthContext";
-import { useWishlist } from "../../context/WishlistContext";
 import { Link } from "react-router-dom";
-import { useCart } from "../../context/CartContext";
+import UserDropdown from "../UserDropdown";
+import { useAuth } from "../../../context/AuthContext";
+import { useWishlist } from "../../../context/WishlistContext";
+import { useCart } from "../../../context/CartContext";
 
 const NavbarIcons = ({ openSearch }) => {
   const { user } = useAuth();
@@ -13,8 +13,8 @@ const NavbarIcons = ({ openSearch }) => {
   const { cart } = useCart();
 
   return (
-    <>
-      <button className="md:hidden cursor-pointer">
+    <div className="flex items-center gap-1.5 sm:gap-4">
+      <button className="md:hidden cursor-pointer mb-1">
         <img src={searchIcon} alt="search icon" onClick={openSearch} />
       </button>
       <Link to="/wishlist">
@@ -37,8 +37,12 @@ const NavbarIcons = ({ openSearch }) => {
           <img src={cartIcon} alt="cart icon" />
         </button>
       </Link>
-      {user && <UserDropdown />}
-    </>
+      {user && (
+        <div className="hidden md:block mb-1">
+          <UserDropdown />
+        </div>
+      )}
+    </div>
   );
 };
 export default NavbarIcons;

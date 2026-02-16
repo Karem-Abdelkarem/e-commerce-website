@@ -16,34 +16,24 @@ const About = () => {
           {t("home")}
         </Link>
         <span className="text-muted-foreground">/</span>
-        <span className="text-primary">About</span>
+        <span className="text-primary">{t("about")}</span>
       </div>
       <div className="flex items-center gap-18.5 mt-10">
-        <div className="w-131.25 shrink-0">
+        <div className="sm:w-131.25 w-78 shrink-0">
           <h1 className="font-inter font-semibold text-[54px] mb-10">
-            Our Story
+            {t("About.title")}
           </h1>
-          <p className="mb-6">
-            Launced in 2015, Exclusive is South Asia’s premier online shopping
-            makterplace with an active presense in Bangladesh. Supported by wide
-            range of tailored marketing, data and service solutions, Exclusive
-            has 10,500 sallers and 300 brands and serves 3 millioons customers
-            across the region.{" "}
-          </p>
-          <p>
-            Exclusive has more than 1 Million products to offer, growing at a
-            very fast. Exclusive offers a diverse assotment in categories
-            ranging from consumer.
-          </p>
+          <p className="mb-6">{t("About.description_1")}</p>
+          <p>{t("About.description_2")}</p>
         </div>
-        <div className="min-w-170 max-w-176.25">
+        <div className="hidden md:block min-w-170 max-w-176.25">
           <img className="w-full" src={Shopping} alt="" />
         </div>
       </div>
       <div>
         <OurStatus />
       </div>
-      <div className="flex items-center gap-7.5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7.5">
         {team.map((member) => (
           <AboutTeam key={member.id} {...member} />
         ))}

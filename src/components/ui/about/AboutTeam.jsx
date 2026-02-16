@@ -1,7 +1,7 @@
 const AboutTeam = (member) => {
   return (
-    <section>
-      <div className="flex items-end justify-center w-92.5 h-107.5 bg-muted rounded-md mb-8">
+    <section className="w-78 md:w-92.5 mx-auto">
+      <div className="flex items-end justify-center h-107.5 bg-muted rounded-md mb-8 ">
         <img src={member.image} alt={member.firstName} />
       </div>
       <h3 className="font-inter text-[32px] font-medium">{member.firstName}</h3>

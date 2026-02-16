@@ -1,7 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 const OurStatus = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7.5 my-35">
-      <article className=" group w-67.5 h-57.5 flex flex-col items-center border rounded-md py-7.5 hover:bg-secondary hover:shadow-md transition">
+      <article className=" group w-67.5 h-57.5 flex flex-col items-center border rounded-md py-7.5 mx-auto sm:mx-0 hover:bg-secondary hover:shadow-md transition">
         <div className="flex justify-center items-center size-20 rounded-full bg-[#c1c1c1] mb-6 group-hover:bg-[#E67C7C]">
           <div className="flex justify-center items-center size-14.5 rounded-full bg-primary group-hover:bg-white">
             <svg
@@ -44,10 +48,10 @@ const OurStatus = () => {
           10.5k{" "}
         </h3>
         <p className="text-primary text-base group-hover:text-white">
-          Sallers active our site
+          {t("About.Sallers active our site")}
         </p>
       </article>
-      <article className=" group w-67.5 h-57.5 flex flex-col items-center border rounded-md py-7.5 hover:bg-secondary hover:shadow-md transition">
+      <article className=" group w-67.5 h-57.5 flex flex-col items-center border rounded-md py-7.5 mx-auto sm:mx-0 hover:bg-secondary hover:shadow-md transition">
         <div className="flex justify-center items-center size-20 rounded-full bg-[#c1c1c1] mb-6 group-hover:bg-[#E67C7C]">
           <div className="flex justify-center items-center size-14.5 rounded-full bg-primary group-hover:bg-white">
             <svg
@@ -83,10 +87,10 @@ const OurStatus = () => {
           33k{" "}
         </h3>
         <p className="text-primary text-base group-hover:text-white">
-          Monthly Product Sales
+          {t("About.Monthly Product Sales")}
         </p>
       </article>
-      <article className=" group w-67.5 h-57.5 flex flex-col items-center border rounded-md py-7.5 hover:bg-secondary hover:shadow-md transition">
+      <article className=" group w-67.5 h-57.5 flex flex-col items-center border rounded-md py-7.5 mx-auto sm:mx-0 hover:bg-secondary hover:shadow-md transition">
         <div className="flex justify-center items-center size-20 rounded-full bg-[#c1c1c1] mb-6 group-hover:bg-[#E67C7C]">
           <div className="flex justify-center items-center size-14.5 rounded-full bg-primary group-hover:bg-white">
             <svg
@@ -105,10 +109,10 @@ const OurStatus = () => {
           45.5k{" "}
         </h3>
         <p className="text-primary text-base group-hover:text-white">
-          Customer active in our site
+          {t("About.Customer active in our site")}
         </p>
       </article>
-      <article className=" group w-67.5 h-57.5 flex flex-col items-center border rounded-md py-7.5 hover:bg-secondary hover:shadow-md transition">
+      <article className=" group w-67.5 h-57.5 flex flex-col items-center border rounded-md py-7.5 mx-auto sm:mx-0 hover:bg-secondary hover:shadow-md transition">
         <div className="flex justify-center items-center size-20 rounded-full bg-[#c1c1c1] mb-6 group-hover:bg-[#E67C7C]">
           <div className="flex justify-center items-center size-14.5 rounded-full bg-primary group-hover:bg-white">
             <svg
@@ -128,7 +132,7 @@ const OurStatus = () => {
           25k{" "}
         </h3>
         <p className="text-primary text-base group-hover:text-white">
-          Anual gross sale in our site
+          {t("About.Anual gross sale in our site")}
         </p>
       </article>
     </section>

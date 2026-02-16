@@ -24,9 +24,9 @@ const Cart = () => {
         <span className="text-muted-foreground">/</span>
         <span className="text-primary">{t("Cart")}</span>
       </div>
-      <div className="w-full flex items-center justify-between px-10 py-6 shadow-sm rounded-md mt-20 mb-10">
+      <div className="w-full flex items-center justify-between p-4 md:px-10 md:py-6 shadow-sm rounded-md mt-20 mb-10">
         <h2>{t("cart.product")}</h2>
-        <h2>{t("cart.price")}</h2>
+        <h2 className="hidden md:block">{t("cart.price")}</h2>
         <h2>{t("cart.quantity")}</h2>
         <h2>{t("cart.subtotal")}</h2>
       </div>
@@ -39,13 +39,15 @@ const Cart = () => {
           ))}
         </div>
       )}
-      <div className="flex items-center justify-between mt-6 mb-20">
-        <Link to={"/shop"}>
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mt-6 mb-20">
+        <Link to={"/shop"} className="block">
           <Button variant="secondary">{t("cart.returnToShop")}</Button>
         </Link>
-        <Button variant="secondary">{t("cart.updateCart")}</Button>
+        <Button className="hidden sm:block" variant="secondary">
+          {t("cart.updateCart")}
+        </Button>
       </div>
-      <div className="flex items-start justify-between">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
         <CartCoupon />
         <CartTotal items={items} total={total} isCartPage={true} />
       </div>

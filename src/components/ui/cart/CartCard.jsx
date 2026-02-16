@@ -7,9 +7,9 @@ const CartCard = ({ item, isCartPage = false }) => {
 
   return (
     <article
-      className={`group w-full flex items-center justify-between gap-0 ${isCartPage && "px-10 py-6 shadow-sm rounded-md"}`}
+      className={`group w-full flex items-center justify-between gap-10 ${isCartPage && "p-4 md:px-10 md:py-6 shadow-sm rounded-md"}`}
     >
-      <div className="flex items-center justify-between gap-5 max-w-42.5 text-nowrap me-40">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-5 max-w-25 md:max-w-42.5 text-nowrap me-0 md:me-15">
         <div className="relative w-13.5 h-13.5 shrink-0">
           {isCartPage && (
             <button
@@ -36,11 +36,13 @@ const CartCard = ({ item, isCartPage = false }) => {
           )}
           <img className="w-full" src={item.imageSrc} alt={t(item.title)} />
         </div>
-        <h3 className="overflow-hidden text-ellipsis">{t(item.title)}</h3>
+        <h3 className="w-full overflow-hidden text-ellipsis">
+          {t(item.title)}
+        </h3>
       </div>
-      <span>${item.price}</span>
+      <span className="hidden md:block">${item.price}</span>
       {isCartPage && (
-        <div className="flex items-center gap-2 mx-70">
+        <div className="flex items-center gap-2 mx-0 md:mx-50">
           <button
             onClick={() => decreaseQuantity(item.id)}
             className="px-2 py-1 border rounded"

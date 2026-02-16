@@ -28,7 +28,7 @@ const CartTotal = ({ items = [], total = 0, isCartPage = false }) => {
 
   return (
     <article
-      className={` w-105.5 font-poppins ${isCartPage && "w-117.5 border-2 rounded-md px-6 py-8 font-poppins"}`}
+      className={`w-auto sm:w-105.5 font-poppins ${isCartPage && "w-117.5 border-2 rounded-md px-6 py-8 font-poppins"}`}
     >
       {isCartPage && (
         <h2 className="font-medium text-xl mb-6">{t("cart.cartTotal")}</h2>

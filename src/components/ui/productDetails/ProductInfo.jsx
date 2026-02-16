@@ -58,7 +58,7 @@ const ProductInfo = ({
   };
 
   return (
-    <section className="w-100">
+    <section className="w-full md:w-100">
       <div className="border-b-2">
         <h1 className="font-inter font-semibold text-2xl">
           {t(product.title)}
@@ -67,7 +67,7 @@ const ProductInfo = ({
           <StarRating rating={product.stars} reviews={product.rates} />
           <span>|</span>
           <span className="font-poppins text-sm text-destructive mt-0.5">
-            In Stock
+            {t("productDetails.In Stock")}
           </span>
         </div>
         <span className="font-inter text-2xl">${product.price}</span>
@@ -108,7 +108,7 @@ const ProductInfo = ({
             +
           </button>
         </div>
-        <Button onClick={handleBuyNow}>Buy Now</Button>
+        <Button onClick={handleBuyNow}>{t("Buy Now")}</Button>
         <button
           onClick={() =>
             isWishlistPage
@@ -173,9 +173,11 @@ const ProductInfo = ({
             <img src={deliveryIcon} alt="" />
           </div>
           <div className="pl-4">
-            <h3>Free Delivery</h3>
+            <h3>{t("productDetails.Free Delivery")}</h3>
             <p className="text-[12px] mt-2 mb-4">
-              Enter your postal code for Delivery Availability
+              {t(
+                "productDetails.Enter your postal code for Delivery Availability",
+              )}
             </p>
           </div>
         </div>
@@ -184,9 +186,9 @@ const ProductInfo = ({
             <img src={returnIcon} alt="" />
           </div>
           <div className="pl-4 mt-4">
-            <h3>Return Delivery</h3>
+            <h3>{t("productDetails.Return Delivery")}</h3>
             <p className="text-[12px] mt-2">
-              Free 30 Days Delivery Returns. Details
+              {t("productDetails.Free 30 Days Delivery Returns. Details")}
             </p>
           </div>
         </div>

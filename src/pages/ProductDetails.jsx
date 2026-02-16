@@ -25,19 +25,17 @@ const ProductDetails = () => {
 
   return (
     <>
-      <section className="max-w-292.5 mx-auto pt-20 pb-35">
+      <section className="max-w-292.5 mx-auto pt-20 pb-35 px-3">
         <div className="flex items-center justify-between gap-3 w-fit text-sm mb-20">
           <Link to="/" className="text-muted-foreground">
             {t("home")}
           </Link>
           <span className="text-muted-foreground">/</span>
-          <Link to="/cart" className="text-muted-foreground">
-            {t(product?.type)}
-          </Link>
+          <span className="text-muted-foreground">{t(product?.type)}</span>
           <span className="text-muted-foreground">/</span>
           <span className="text-primary">{t(product?.title)}</span>
         </div>
-        <div className="flex items-start justify-between gap-17">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-17">
           <ProductGallery images={images} />
           <ProductInfo
             product={product}

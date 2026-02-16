@@ -13,11 +13,15 @@ const Contact = () => {
           {t("home")}
         </Link>
         <span className="text-muted-foreground">/</span>
-        <span className="text-primary">Contact</span>
+        <span className="text-primary">{t("contact")}</span>
       </div>
-      <div className="flex items-start gap-8">
-        <ContactDetails />
-        <ContactForm />
+      <div className="flex flex-col md:flex-row items-start gap-8">
+        <div className="order-1 md:-order-1">
+          <ContactDetails />
+        </div>
+        <div className="w-full">
+          <ContactForm />
+        </div>
       </div>
     </section>
   );

@@ -62,7 +62,7 @@ export function HeroCarousel() {
       opts={{
         direction: i18n.dir() === "rtl" ? "rtl" : "ltr",
       }}
-      className="max-w-223 mt-5 md:mt-10"
+      className="max-w-223 md:mt-10 bg-primary"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -78,7 +78,7 @@ export function HeroCarousel() {
                 />
               </div>
 
-              <div className="absolute inset-0 flex flex-col justify-center gap-5 bg-black/40 px-6 text-white text-center md:text-start">
+              <div className="absolute w-full md:w-73.75 inset-0 flex flex-col justify-center gap-5 bg-black/40 px-6 md:ps-16 text-white text-center md:text-start">
                 <div className="flex items-center gap-6 mx-auto md:mx-0">
                   <img src={slide.logo} alt="" />
                   <p className="font-poppins">{slide.subtitle}</p>

@@ -21,11 +21,11 @@ const Bill = () => {
 
   return (
     <section className="max-w-5xl mx-auto pt-20 pb-32 px-4">
-      <h1 className="text-3xl font-semibold mb-10">Order Confirmation</h1>
+      <h1 className="text-3xl font-semibold mb-10">{t("bill.title")}</h1>
 
       {/* Billing */}
       <div className="mb-10">
-        <h2 className="text-xl font-medium mb-4">Billing Details</h2>
+        <h2 className="text-xl font-medium mb-4">{t("bill.billingDetails")}</h2>
         <p>{billingData.firstName}</p>
         <p>{billingData.streetAddress}</p>
         <p>{billingData.phoneNumber}</p>
@@ -34,7 +34,7 @@ const Bill = () => {
 
       {/* Items */}
       <div className="mb-10">
-        <h2 className="text-xl font-medium mb-4">Order Items</h2>
+        <h2 className="text-xl font-medium mb-4">{t("bill.orderItems")}</h2>
 
         {items.map((item) => (
           <div key={item.id} className="flex justify-between">
@@ -48,8 +48,12 @@ const Bill = () => {
 
       {/* Summary */}
       <div className="border-t pt-6">
-        <p>Payment: {paymentMethod}</p>
-        <p className="text-lg font-semibold">Total: ${total}</p>
+        <p>
+          {t("bill.payment")}: {paymentMethod}
+        </p>
+        <p className="text-lg font-semibold">
+          {t("bill.total")}: ${total}
+        </p>
       </div>
     </section>
   );

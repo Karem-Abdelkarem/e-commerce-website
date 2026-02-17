@@ -14,13 +14,15 @@ const Checkout = () => {
         </Link>
         <span className="text-muted-foreground">/</span>
         <Link to="/cart" className="text-muted-foreground">
-          View Cart
+          {t("checkout.View Cart")}
         </Link>
         <span className="text-muted-foreground">/</span>
-        <span className="text-primary">CheckOut</span>
+        <span className="text-primary">{t("checkout.CheckOut")}</span>
       </div>
-      <h1 className="font-inter text-4xl font-medium mb-12">Billing Details</h1>
-      <div className="flex items-start gap-43">
+      <h1 className="font-inter text-4xl font-medium mb-12">
+        {t("checkout.title")}
+      </h1>
+      <div className="flex flex-col md:flex-row items-start gap-43">
         <CheckoutForm />
         <CheckoutDetails />
       </div>

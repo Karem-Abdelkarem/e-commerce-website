@@ -10,8 +10,10 @@ import toast from "react-hot-toast";
 import { useAuth } from "../../../context/AuthContext";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../../../firebase/firebaseConfig";
+import { useTranslation } from "react-i18next";
 
 const CheckoutDetails = () => {
+  const { t } = useTranslation();
   const { cart, clearCart } = useCart();
   const { billingData, paymentMethod, checkoutData, setCheckoutData } =
     useCheckout();
@@ -45,8 +47,8 @@ const CheckoutDetails = () => {
   };
 
   return (
-    <section className="flex flex-col gap-8 pt-8">
-      <div className="flex flex-col gap-8 w-106.25">
+    <section className=" w-full md:w-106.25 flex flex-col gap-8 pt-8">
+      <div className="flex flex-col gap-8 w-full md:w-106.25">
         {items.map((item) => (
           <CartCard key={item.id} item={item} isCartPage={false} />
         ))}
@@ -61,7 +63,7 @@ const CheckoutDetails = () => {
         <CartCoupon />
       </div>
       <div>
-        <Button onClick={handlePlaceOrder}>Place Order</Button>
+        <Button onClick={handlePlaceOrder}>{t("checkout.placeOrder")}</Button>
       </div>
     </section>
   );

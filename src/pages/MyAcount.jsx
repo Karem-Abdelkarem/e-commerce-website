@@ -18,7 +18,7 @@ const MyAcount = () => {
           <span className="text-primary">{t("account")}</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-sm text-primary">Welcome!</span>
+          <span className="text-sm text-primary">{t("myAccount.welcome")}</span>
           <span className="text-sm text-secondary">
             {user?.firstName || ""}
           </span>

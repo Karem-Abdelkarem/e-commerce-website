@@ -14,12 +14,12 @@ const ErrorPage = () => {
         <span className="text-primary">404 Error</span>
       </div>
       <div className="flex flex-col items-center justify-center mt-35">
-        <h1 className="font-inter font-medium text-[110px]">404 Not Found</h1>
-        <p className="font-poppins mt-10 mb-20">
-          Your visited page not found. You may go home page.
-        </p>
+        <h1 className="font-inter font-medium text-4xl md:text-[110px]">
+          {t("404.title")}
+        </h1>
+        <p className="font-poppins mt-10 mb-20">{t("404.description")}</p>
         <Link to={"/"}>
-          <Button className="font-poppins">Back to home page</Button>
+          <Button className="font-poppins">{t("404.goHome")}</Button>
         </Link>
       </div>
     </section>

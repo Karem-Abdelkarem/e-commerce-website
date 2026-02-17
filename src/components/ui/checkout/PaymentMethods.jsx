@@ -10,8 +10,10 @@ import Nagad from "@/assets/images/Nagad.png";
 
 import { useForm } from "react-hook-form";
 import { useCheckout } from "../../../context/CheckoutContext";
+import { useTranslation } from "react-i18next";
 
 const PaymentMethods = () => {
+  const { t } = useTranslation();
   const { paymentMethod, setPaymentMethod } = useCheckout();
 
   const {
@@ -30,14 +32,14 @@ const PaymentMethods = () => {
           {/* Cash on Delivery */}
           <div className="flex items-center space-x-4">
             <RadioGroupItem value="cash" id="cash" />
-            <Label htmlFor="cash">Cash on Delivery</Label>
+            <Label htmlFor="cash">{t("checkout.Cash on Delivery")}</Label>
           </div>
 
           {/* Bank Transfer */}
-          <div className="flex items-center space-x-4 w-106.75">
+          <div className="flex items-center space-x-4 w-full md:w-106.75">
             <RadioGroupItem value="bank" id="bank" />
             <div className="flex items-center justify-between w-full">
-              <Label htmlFor="bank">Bank</Label>
+              <Label htmlFor="bank">{t("checkout.Bank")}</Label>
               <div className="flex items-center gap-2">
                 <img src={Bkash} alt="" />
                 <img src={Visa} alt="" />
@@ -52,11 +54,11 @@ const PaymentMethods = () => {
         {paymentMethod === "bank" && (
           <form className="pt-4 w-106.75 bg-[#f4f4f4] border border-[#dedede] rounded-md p-2.5">
             <div className="space-y-2 w-full">
-              <label className="sr-only">Card number</label>
+              <label className="sr-only">{t("checkout.Card number")}</label>
               <input
                 className="w-full bg-white h-9 px-3 py-1 rounded-md border border-muted-foreground text-sm"
                 type="text"
-                placeholder="Card number"
+                placeholder={t("checkout.Card number")}
                 {...register("cardNumber", {
                   required: "Enter a valid card number",
                 })}
@@ -67,11 +69,11 @@ const PaymentMethods = () => {
             </p>
             <div className="flex items-center justify-between gap-4">
               <div className="space-y-2 w-full">
-                <label className="sr-only">Security code</label>
+                <label className="sr-only">{t("checkout.Security code")}</label>
                 <input
                   className="w-full bg-white h-9 px-3 py-1 rounded-md border border-muted-foreground text-sm"
                   type="text"
-                  placeholder="Security code"
+                  placeholder={t("checkout.Security code")}
                   {...register("securityCode", {
                     required: "Enter the CVV or security code on your card",
                   })}
@@ -81,11 +83,13 @@ const PaymentMethods = () => {
                 </p>
               </div>
               <div className="space-y-2 w-full">
-                <label className="sr-only">Expiration date (MM / YY)</label>
+                <label className="sr-only">
+                  {t("checkout.Expiration date (MM / YY)")}
+                </label>
                 <input
                   className="w-full bg-white h-9 px-3 py-1 rounded-md border border-muted-foreground text-sm"
                   type="text"
-                  placeholder="Expiration date (MM / YY)"
+                  placeholder={t("checkout.Expiration date (MM / YY)")}
                   {...register("expirationDate", {
                     required: "Enter a valid expiration date",
                   })}
@@ -96,11 +100,11 @@ const PaymentMethods = () => {
               </div>
             </div>
             <div className="space-y-2 w-full">
-              <label className="sr-only">Name on card</label>
+              <label className="sr-only">{t("checkout.Name on card")}</label>
               <input
                 className="w-full bg-white h-9 px-3 py-1 rounded-md border border-muted-foreground text-sm"
                 type="text"
-                placeholder="Name on card"
+                placeholder={t("checkout.Name on card")}
                 {...register("nameOnCard", {
                   required:
                     "Enter your name exactly as it’s written on your card",

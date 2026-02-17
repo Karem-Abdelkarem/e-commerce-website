@@ -20,10 +20,11 @@ export function ViewProductDialog({ item }) {
   const { addToCart } = useCart();
   const { addToWishlist, isInWishlist } = useWishlist();
   const [quantity, setQuantity] = useState(1);
+  const [open, setOpen] = useState(false);
 
   return (
-    <Dialog>
-      <DialogTrigger asChild>
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild onClick={() => setOpen(true)}>
         <button
           onClick={(e) => {
             e.stopPropagation();
@@ -33,11 +34,11 @@ export function ViewProductDialog({ item }) {
           <img src={eyeIcon} alt="" />
         </button>
       </DialogTrigger>
-      <DialogContent className="flex items-start gap-8 p-8 sm:max-w-4xl">
+      <DialogContent className="flex flex-col sm:flex-row items-start gap-8 p-8 max-w-2xl sm:max-w-4xl">
         <DialogDescription className="sr-only">
           Product quick view dialog
         </DialogDescription>
-        <div className="w-100 h-100 bg-muted aspect-square rounded-md flex items-center justify-center p-8">
+        <div className="w-50 sm:w-100 h-50 sm:h-100 bg-muted aspect-square rounded-md flex items-center justify-center p-8">
           <img
             className="w-full h-full object-contain"
             src={item.imageSrc}
@@ -47,14 +48,14 @@ export function ViewProductDialog({ item }) {
         <div className="w-full">
           <div className="flex items-start gap-4 w-full">
             <div className="space-y-4 w-full">
-              <DialogTitle className="text-4xl text-primary font-semibold">
+              <DialogTitle className="text-2xl sm:text-4xl text-primary font-semibold">
                 {t(item.title)}{" "}
               </DialogTitle>
               <div className="flex items-center gap-3">
                 <StarRating rating={item.stars} reviews={item.rates} />
                 <span>|</span>
                 <span className="font-poppins text-base text-destructive mt-0.5">
-                  In Stock
+                  {t("productDetails.In Stock")}
                 </span>
               </div>
               <div className="flex items-center gap-3 font-medium text-[16px]">
@@ -91,9 +92,12 @@ export function ViewProductDialog({ item }) {
             <div className="flex items-center gap-3 mt-6">
               <Button
                 className="w-[90%]"
-                onClick={() => addToCart({ ...item, quantity })}
+                onClick={() => {
+                  addToCart({ ...item, quantity });
+                  setOpen(false);
+                }}
               >
-                Add to Cart
+                {t("addToCart")}
               </Button>
               <button
                 onClick={() => addToWishlist(item)}
@@ -137,7 +141,7 @@ export function ViewProductDialog({ item }) {
               to={`/products/${item.id}`}
               className="block mt-4 text-center text-secondary hover:underline"
             >
-              View Details
+              {t("myAccount.View Details")}
             </Link>
           </div>
         </div>

@@ -1,38 +1,41 @@
+import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
 
 const MyAccountSidebar = () => {
+  const { t } = useTranslation();
+
   return (
-    <aside>
+    <aside className="hidden md:block">
       <ul className="list-none flex flex-col">
         <NavLink to="/account" end className="font-medium text-primary mb-4">
-          Manage My Account
+          {t("myAccount.Manage My Account")}
         </NavLink>
         <NavLink
           to="/account"
           end
           className={({ isActive }) =>
-            `${"ml-9 text-primary"} ${isActive && "text-secondary"}`
+            `${"ms-9 text-primary"} ${isActive && "text-secondary"}`
           }
         >
-          My Profile
+          {t("myAccount.My Profile")}
         </NavLink>
         <NavLink
           to="/account/address"
           end
           className={({ isActive }) =>
-            `${"ml-9 my-2 text-primary"} ${isActive && "text-secondary"}`
+            `${"ms-9 my-2 text-primary"} ${isActive && "text-secondary"}`
           }
         >
-          Address Book
+          {t("myAccount.Address Book")}
         </NavLink>
         <NavLink
           to="/account/payment-options"
           end
           className={({ isActive }) =>
-            `${"ml-9 text-primary"} ${isActive && "text-secondary"}`
+            `${"ms-9 text-primary"} ${isActive && "text-secondary"}`
           }
         >
-          My Payment Options
+          {t("myAccount.My Payment Options")}
         </NavLink>
         <NavLink
           to="/account/my-orders"
@@ -41,28 +44,28 @@ const MyAccountSidebar = () => {
             `${"font-medium my-4 text-primary"} ${isActive && "text-secondary"}`
           }
         >
-          My Orders
+          {t("myAccount.My Orders")}
         </NavLink>
         <NavLink
           to="/account/returns"
           end
           className={({ isActive }) =>
-            `${"ml-9 text-primary"} ${isActive && "text-secondary"}`
+            `${"ms-9 text-primary"} ${isActive && "text-secondary"}`
           }
         >
-          My Returns
+          {t("myAccount.My Returns")}
         </NavLink>
         <NavLink
           to="/account/cancellations"
           end
           className={({ isActive }) =>
-            `${"ml-9 mt-2 mb-4 text-primary"} ${isActive && "text-secondary"}`
+            `${"ms-9 mt-2 mb-4 text-primary"} ${isActive && "text-secondary"}`
           }
         >
-          My Cancellations
+          {t("myAccount.My Cancellations")}
         </NavLink>
         <Link to="/wishlist" className="font-medium text-primary">
-          My WishList
+          {t("myAccount.My WishList")}
         </Link>
       </ul>
     </aside>

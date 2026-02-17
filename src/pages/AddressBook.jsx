@@ -1,10 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "../components/ui/button";
 
 const AddressBook = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="w-210 bg-white py-10 px-20 shadow-lg rounded-md font-poppins">
+    <section className="w-full sm:w-210 bg-white py-10 px-5 sm:px-20 shadow-lg rounded-md font-poppins">
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-secondary text-2xl font-medium">Address Book</h1>
+        <h1 className="text-secondary text-xl sm:text-2xl font-medium">
+          {t("myAccount.Address Book")}
+        </h1>
         <Button>
           <svg
             width="16px"
@@ -37,7 +42,7 @@ const AddressBook = () => {
               ></path>{" "}
             </g>
           </svg>
-          Add New Address
+          {t("myAccount.Add New Address")}
         </Button>
       </div>
       <div className="flex flex-col items-center justify-center py-16">
@@ -72,7 +77,9 @@ const AddressBook = () => {
             ></path>{" "}
           </g>
         </svg>
-        <p className="text-gray-500 mt-4">No saved addresses yet</p>
+        <p className="text-gray-500 mt-4">
+          {t("myAccount.No Saved Addresses yet")}
+        </p>
       </div>
     </section>
   );

@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 const SizeSelector = ({ sizes, selectedSize, onSelectSize }) => {
+  const { t } = useTranslation();
   return (
     <div className="flex items-center gap-6">
-      <p className="font-inter text-xl">Size:</p>
+      <p className="font-inter text-xl">{t("productDetails.Size")}:</p>
 
       <div className="flex gap-3">
         {sizes.map((size) => (

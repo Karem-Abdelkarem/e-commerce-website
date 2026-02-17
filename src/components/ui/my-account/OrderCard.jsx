@@ -7,7 +7,9 @@ const OrderCard = ({ order }) => {
     <div className="border rounded-lg p-4 space-y-4">
       <div className="flex justify-between items-center">
         <div>
-          <p className="font-medium">Order #{order.id.slice(0, 8)}</p>
+          <p className="font-medium">
+            {t("myAccount.Order")} #{order.id.slice(0, 8)}
+          </p>
           <p className="text-sm text-gray-500">
             {order.createdAt?.toDate().toLocaleDateString()}
           </p>
@@ -37,9 +39,11 @@ const OrderCard = ({ order }) => {
       </div>
 
       <div className="flex justify-between items-center border-t pt-4">
-        <p className="font-semibold">Total: ${order.total}</p>
+        <p className="font-semibold">
+          {t("cart.total")}: ${order.total}
+        </p>
         <button className="text-sm text-red-600 hover:underline">
-          View Details
+          {t("myAccount.View Details")}
         </button>
       </div>
     </div>

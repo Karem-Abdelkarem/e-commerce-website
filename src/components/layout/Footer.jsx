@@ -47,10 +47,10 @@ const Footer = () => {
         <div className="font-poppins max-w-full md:max-w-30.75">
           <h3 className="font-medium text-xl mb-6">{t("Account")}</h3>
           <div className="flex flex-col gap-4 text-[16px]">
-            <Link>{t("account")}</Link>
+            <Link to={"/account"}>{t("account")}</Link>
             <Link to={"/signup"}>{t("Login / Register")}</Link>
-            <Link>{t("Cart")}</Link>
-            <Link>{t("Wishlist")}</Link>
+            <Link to={"/cart"}>{t("Cart")}</Link>
+            <Link to={"/wishlist"}>{t("Wishlist")}</Link>
             <Link to={"/shop"}>{t("Shop")}</Link>
           </div>
         </div>

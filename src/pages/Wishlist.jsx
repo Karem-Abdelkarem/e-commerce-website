@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import ProductBadge from "../components/product/ProductBadge";
-import ProductCard from "../components/product/productCard";
+import ProductCard from "../components/product/ProductCard";
 import { Button } from "../components/ui/button";
 import { useWishlist } from "../context/WishlistContext";
 import { ITEMS } from "../data/products";

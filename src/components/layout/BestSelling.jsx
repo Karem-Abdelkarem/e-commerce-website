@@ -3,7 +3,7 @@ import ProductBadge from "../product/ProductBadge";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
 import { ITEMS } from "../../data/products";
-import ProductCard from "../product/productCard";
+import ProductCard from "../product/ProductCard";
 
 const topRatedProducts = [...ITEMS]
   .sort((a, b) => {

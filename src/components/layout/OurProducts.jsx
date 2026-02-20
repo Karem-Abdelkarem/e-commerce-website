@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import ProductBadge from "../product/ProductBadge";
 import { ITEMS } from "../../data/products";
-import ProductCard from "../product/productCard";
+import ProductCard from "../product/ProductCard";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 

@@ -11,7 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import ProductCard from "../product/productCard";
+import ProductCard from "../product/ProductCard";
 import { Link } from "react-router-dom";
 
 const discountedItems = ITEMS.filter((item) => item.discount > 0);

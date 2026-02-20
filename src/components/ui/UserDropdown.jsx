@@ -8,7 +8,7 @@ import user from "@/assets/icons/user.svg";
 import mallbag from "@/assets/icons/icon-mallbag.svg";
 import cancel from "@/assets/icons/icon-cancel.svg";
 import review from "@/assets/icons/Icon-Reviews.svg";
-import logoutIcon from "@/assets/icons/icon-logout.svg";
+import logoutIcon from "@/assets/icons/Icon-logout.svg";
 import { useAuth } from "../../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";

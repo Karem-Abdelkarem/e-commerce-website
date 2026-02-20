@@ -1,5 +1,5 @@
 import ProductBadge from "../components/product/ProductBadge";
-import ProductCard from "../components/product/productCard";
+import ProductCard from "../components/product/ProductCard";
 import { ITEMS } from "../data/products";
 
 const Shop = () => {

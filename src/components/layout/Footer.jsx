@@ -89,7 +89,7 @@ const Footer = () => {
       </div>
       <div>
         <p className="text-center text-[#3d3d3d] font-poppins text-[16px]">
-          © Copyright Rimel 2026. All right reserved
+          © Copyright Kareem 2026. All right reserved
         </p>
       </div>
     </footer>

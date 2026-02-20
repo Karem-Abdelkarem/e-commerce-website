@@ -6,7 +6,7 @@ const Services = () => {
 
   return (
     <section className="max-w-292.5 mx-auto mb-35 px-3">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-5 flex-wrap max-w-235.5 mx-auto font-poppins">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-5 flex-wrap max-w-235.5 mx-auto font-poppins">
         {services.map((service) => (
           <div key={service.id} className="flex flex-col items-center">
             <div className="flex justify-center items-center size-20 rounded-full bg-[#c1c1c1] mb-6">

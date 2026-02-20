@@ -29,6 +29,7 @@ const SidebarNavLinks = ({ isMenuOpen, setIsMenuOpen }) => {
             to={"/"}
             end
             className="block p-2 text-sm font-medium rounded-md transition-colors hover:bg-muted"
+            onClick={() => setIsMenuOpen(false)}
           >
             {t("home")}
           </NavLink>
@@ -36,6 +37,7 @@ const SidebarNavLinks = ({ isMenuOpen, setIsMenuOpen }) => {
             to={"/contact"}
             end
             className="block p-2 text-sm font-medium rounded-md transition-colors hover:bg-muted"
+            onClick={() => setIsMenuOpen(false)}
           >
             {t("contact")}
           </NavLink>
@@ -43,6 +45,7 @@ const SidebarNavLinks = ({ isMenuOpen, setIsMenuOpen }) => {
             to={"/about"}
             end
             className="block p-2 text-sm font-medium rounded-md transition-colors hover:bg-muted"
+            onClick={() => setIsMenuOpen(false)}
           >
             {t("about")}
           </NavLink>
@@ -50,12 +53,13 @@ const SidebarNavLinks = ({ isMenuOpen, setIsMenuOpen }) => {
             to={"/signup"}
             end
             className="block p-2 text-sm font-medium rounded-md transition-colors hover:bg-muted"
+            onClick={() => setIsMenuOpen(false)}
           >
             {t("signUp")}
           </NavLink>
         </div>
         <div className="flex items-center gap-4 px-5 mb-5">
-          <UserDropdown />
+          <UserDropdown setIsMenuOpen={setIsMenuOpen} />
           <div className="flex flex-col">
             <span>{user?.firstName}</span>
             <span>{user?.email}</span>

@@ -11,18 +11,23 @@ import review from "@/assets/icons/Icon-Reviews.svg";
 import logoutIcon from "@/assets/icons/icon-logout.svg";
 import { useAuth } from "../../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-function UserDropdown() {
+function UserDropdown({ setIsMenuOpen }) {
+  const { t } = useTranslation();
   const { logout } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    try {
-      await logout();
-      navigate("/login");
-    } catch (error) {
-      console.error("Logout error:", error);
+    if (window.confirm(t("Are you sure you want to log out?"))) {
+      try {
+        await logout();
+        navigate("/login");
+      } catch (error) {
+        console.error("Logout error:", error);
+      }
     }
+    setIsMenuOpen(false);
   };
 
   return (
@@ -56,32 +61,36 @@ function UserDropdown() {
         align="end"
         className="w-64 rounded-2xl bg-black/50 backdrop-blur-xl border border-white/30 shadow-xl text-white p-2"
       >
-        <Link to="/account">
+        <Link to="/account" onClick={() => setIsMenuOpen(false)}>
           <DropdownMenuItem>
             <div className="flex items-center gap-4 cursor-pointer">
-              <img src={user} alt="" /> Manage my account
+              <img src={user} alt="" /> {t("Manage my account")}
             </div>
           </DropdownMenuItem>
         </Link>
-        <Link to="/account/my-orders">
+        <Link to="/account/my-orders" onClick={() => setIsMenuOpen(false)}>
           <DropdownMenuItem>
             <div className="flex items-center gap-4 cursor-pointer">
-              <img src={mallbag} alt="" /> My orders
+              <img src={mallbag} alt="" /> {t("My orders")}
             </div>
           </DropdownMenuItem>
         </Link>
-        <Link to="/account/cancellations">
+        <Link to="/account/cancellations" onClick={() => setIsMenuOpen(false)}>
           <DropdownMenuItem>
             <div className="flex items-center gap-4 cursor-pointer">
-              <img src={cancel} alt="" /> My cancellations
+              <img src={cancel} alt="" /> {t("My cancellations")}
             </div>
           </DropdownMenuItem>
         </Link>
-        <DropdownMenuItem>
-          <img src={review} alt="" /> My reviews
+        <DropdownMenuItem onClick={() => setIsMenuOpen(false)}>
+          <div className="flex items-center gap-4 cursor-pointer">
+            <img src={review} alt="" /> {t("My reviews")}
+          </div>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={handleLogout}>
-          <img src={logoutIcon} alt="" /> Log out
+          <div className="flex items-center gap-4 cursor-pointer">
+            <img src={logoutIcon} alt="" /> {t("Log out")}
+          </div>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

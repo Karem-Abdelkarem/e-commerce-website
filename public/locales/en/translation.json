@@ -1,0 +1,411 @@
+{
+  "dir": "ltr",
+  "topHeader": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
+  "shop": "ShopNow",
+
+  "home": "Home",
+  "contact": "Contact",
+  "about": "About",
+  "signUp": "Sign Up",
+  "account": "My Account",
+
+  "What are you looking for?": "What are you looking for?",
+
+  "Manage my account": "Manage my account",
+  "My orders": "My orders",
+  "My cancellations": "My cancellations",
+  "My reviews": "My reviews",
+  "Log out": "Log out",
+
+  "Woman's Fashion": "Woman's Fashion",
+  "Men's Fashion": "Men's Fashion",
+  "Electronics": "Electronics",
+  "Home & Lifestyle": "Home & Lifestyle",
+  "Medicine": "Medicine",
+  "Sports & Outdoor": "Sports & Outdoor",
+  "Baby's & Toys": "Baby's & Toys",
+  "Groceries & Pets": "Groceries & Pets",
+  "Health & Beauty": "Health & Beauty",
+
+  "iPhone 14 Series": "iPhone 14 Series",
+  "macbook": "macbook",
+  "tablet": "tablet",
+  "Up to 10% off Voucher": "Up to 10% off Voucher",
+  "Shop Now": "Shop Now",
+
+  "Today's": "Today's",
+  "Flash Sales": "Flash Sales",
+  "Days": "Days",
+  "Hours": "Hours",
+  "Minutes": "Minutes",
+  "Seconds": "Seconds",
+
+  "new": "New",
+  "addToCart": "Add To Cart",
+  "View All Products": "View All Products",
+
+  "productsArray": [
+    {
+      "title": "Kids Electric Car",
+      "type": "Gaming",
+      "details": "An exciting electric car for kids to drive around in style, providing hours of entertainment and fun."
+    },
+    {
+      "title": "CANON EOS DSLR Camera",
+      "type": "Technology",
+      "details": "Capture stunning photos and videos with this professional-grade Canon DSLR camera, perfect for photography enthusiasts."
+    },
+    {
+      "title": "Breed Dry Dog Food",
+      "type": "General",
+      "details": "Nutritious dry dog food to keep your furry friend healthy and happy, made with high-quality ingredients."
+    },
+    {
+      "title": "ASUS FHD Gaming Laptop",
+      "type": "Technology",
+      "details": "Experience high-performance gaming with this ASUS FHD gaming laptop, featuring advanced graphics and smooth gameplay."
+    },
+    {
+      "title": "Curology Product Set",
+      "type": "General",
+      "details": "A complete skincare set by Curology to cleanse, moisturize, and protect your skin, leaving it soft and radiant."
+    },
+    {
+      "title": "GP11 Shooter USB Gamepad",
+      "type": "Gaming",
+      "details": "Enhance your gaming experience with the GP11 Shooter USB gamepad, featuring high-quality construction and precise controls."
+    },
+    {
+      "title": "Quilted Satin Jacket",
+      "type": "Clothes",
+      "details": "Stay stylish and warm with this quilted satin jacket, perfect for adding a trendy touch to your outfit."
+    },
+    {
+      "title": "Small Bookshelf",
+      "type": "General",
+      "details": "Organize your books and decorative items neatly with this small bookshelf, designed to fit in compact spaces."
+    },
+    {
+      "title": "RGB Liquid CPU Cooler",
+      "type": "Technology",
+      "details": "Keep your CPU cool and running smoothly with the RGB liquid CPU cooler, featuring a high-performance pump and customizable RGB lighting."
+    },
+    {
+      "title": "Gucci Duffle Bag",
+      "type": "Clothes",
+      "details": "Travel in style with the Gucci duffle bag, crafted from premium materials and designed for durability and luxury."
+    },
+    {
+      "title": "The North Coat",
+      "type": "Clothes",
+      "details": "Stay warm and fashionable with The North Coat, featuring a durable construction and timeless design."
+    },
+    {
+      "title": "HAVIT HV-G92 Gamepad",
+      "type": "Gaming",
+      "details": "Enjoy responsive and precise gaming controls with the HAVIT HV-G92 gamepad, designed for hours of gaming fun."
+    },
+    {
+      "title": "AK-900 Wired Keyboard",
+      "type": "Technology",
+      "details": "Type with speed and accuracy using the AK-900 wired keyboard, featuring a durable construction and ergonomic design."
+    },
+    {
+      "title": "IPS LCD Gaming Monitor",
+      "type": "Technology",
+      "details": "Immerse yourself in gaming with the IPS LCD gaming monitor, delivering vibrant visuals and smooth gameplay."
+    },
+    {
+      "title": "S-Series Comfort Chair",
+      "type": "Clothes",
+      "details": "Relax in comfort with the S-Series comfort chair, featuring ergonomic design and plush cushioning for long hours of sitting."
+    },
+    {
+      "title": "JBL Boombox 2",
+      "type": "New Arrival",
+      "details": "Experience powerful sound with the JBL Boombox 2, featuring a rugged design and long battery life for all-day listening."
+    },
+    {
+      "title": "perfume",
+      "type": "New Arrival",
+      "details": "This perfume is a blend of oud, rose, and incense, creating a rich and luxurious scent that lasts all day."
+    },
+
+    {
+      "title": "PlayStation 5",
+      "type": "New Arrival",
+      "details": "The black and white version of the PS5 is coming out on sale."
+    },
+    {
+      "title": "Speaker",
+      "type": "New Arrival",
+      "details": "Amazing sound quality with the Amazon wireless speaker."
+    },
+    {
+      "title": "Football Shoes",
+      "type": "New Arrival",
+      "details": "The best football shoes for your game, and you can find the best collections here."
+    }
+  ],
+
+  "Categories": "Categories",
+  "Browse By Category": "Browse By Category",
+
+  "categoriesArray": [
+    {
+      "title": "Phone"
+    },
+    {
+      "title": "Computers"
+    },
+    {
+      "title": "SmartWatch"
+    },
+    {
+      "title": "Camera"
+    },
+    {
+      "title": "HeadPhones"
+    },
+    {
+      "title": "Gaming"
+    },
+    {
+      "title": "Furniture"
+    },
+    {
+      "title": "Clothes"
+    }
+  ],
+
+  "This Month": "This Month",
+  "Best Selling Products": "Best Selling Products",
+  "View All": "View All",
+
+  "Enhance Your Music Experience": "Enhance Your Music Experience",
+  "Buy Now": "Buy Now",
+
+  "Our Products": "Our Products",
+  "Explore Our Products": "Explore Our Products",
+
+  "Featured": "Featured",
+  "New Arrival": "New Arrival",
+
+  "featuredArray": [
+    {
+      "title": "PlayStation 5",
+      "details": "Black and White version of the PS5 coming out on sale."
+    },
+    {
+      "title": "Women’s Collections",
+      "details": "Featured woman collections that give you another vibe."
+    },
+    {
+      "title": "Speakers",
+      "details": "Amazon wireless speakers"
+    },
+    {
+      "title": "Perfume",
+      "details": "GUCCI INTENSE OUD EDP"
+    }
+  ],
+
+  "services": [
+    {
+      "value": "FREE AND FAST DELIVERY",
+      "description": "Free delivery for all orders over $140"
+    },
+    {
+      "value": "24/7 CUSTOMER SERVICE",
+      "description": "Friendly customer support"
+    },
+    {
+      "value": "MONEY BACK GUARANTEE",
+      "description": "We return money within 30 days"
+    }
+  ],
+
+  "Subscribe": "Subscribe",
+  "Get 10% off your first order": "Get 10% off your first order",
+  "Enter your email": "Enter your email",
+
+  "Support": "Support",
+
+  "Account": "Account",
+  "Login / Register": "Login / Register",
+  "Cart": "Cart",
+  "Wishlist": "Wishlist",
+  "Shop": "Shop",
+
+  "Quick Link": "Quick Link",
+  "Privacy Policy": "Privacy Policy",
+  "Terms Of Use": "Terms Of Use",
+  "FAQ": "FAQ",
+
+  "Download App": "Download App",
+  "Save $3 with App New User Only": "Save $3 with App New User Only",
+
+  "signup": {
+    "name": "Name",
+    "title": "Create an account",
+    "subtitle": "Enter your details below",
+    "haveAccount": "Already have an account?",
+    "login": "LogIn",
+    "email": "Email or Phone Number",
+    "password": "Password",
+    "creatAccount": "Create Account",
+    "loading": "Creating...",
+    "googlebutton": "Sign up with Google"
+  },
+
+  "login": {
+    "title": "Log in to Exclusive",
+    "forgotPassword": "Forgot Password?",
+    "loading": "Logging in..."
+  },
+
+  "forgetPassword": {
+    "title": "Forgot Password",
+    "subtitle": "Enter your email to reset your password",
+    "email": "Email Address",
+    "resetPassword": "Reset Password",
+    "loading": "Sending...",
+    "backToLogin": "Back to Login"
+  },
+
+  "wishlist": {
+    "moveAllToBag": "Move All To Bag",
+    "emptyMessage": "Your wishlist is empty.",
+    "justForYou": "Just For You",
+    "seeAll": "See All"
+  },
+
+  "cart": {
+    "product": "Product",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "emptyMessage": "Your Cart is Empty",
+    "returnToShop": "Return To Shop",
+    "updateCart": "Update Cart",
+    "applyCoupon": "Apply Coupon",
+    "couponCode": "Coupon Code",
+    "cartTotal": "Cart Total",
+    "shipping": "Shipping",
+    "free": "Free",
+    "total": "Total",
+    "proceedToCheckout": "Proceed To Checkout"
+  },
+
+  "Contact": {
+    "callToUs": "Call To Us",
+    "we are available 24/7, 7 days a week": "We are available 24/7, 7 days a week",
+    "writeToUs": "Write To Us",
+    "Fill out our form and we will contact you within 24 hours": "Fill out our form and we will contact you within 24 hours.",
+    "name": "Your Name *",
+    "email": "Your Email *",
+    "phone": "Your Phone *",
+    "message": "Your Message",
+    "sendMessage": "Send Message",
+    "Your Name is required": "Your Name is required",
+    "Email is required": "Email is required",
+    "Email is not valid": "Email is not valid",
+    "Your Phone is required": "Your Phone is required",
+    "Message is required": "Message is required",
+    "Message must be at least 10 characters": "Message must be at least 10 characters"
+  },
+
+  "About": {
+    "title": "Our Story",
+    "description_1": "Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active presense in Bangladesh. Supported by wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the region.",
+    "description_2": "Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse assotment in categories ranging from consumer.",
+    "Sallers active our site": "Sallers active our site",
+    "Monthly Product Sales": "Monthly Product Sales",
+    "Customer active in our site": "Customer active in our site",
+    "Anual gross sale in our site": "Anual gross sale in our site"
+  },
+
+  "productDetails": {
+    "In Stock": "In Stock",
+    "Free Delivery": "Free Delivery",
+    "Enter your postal code for Delivery Availability": "Enter your postal code for Delivery Availability",
+    "Return Delivery": "Return Delivery",
+    "Free 30 Days Delivery Returns. Details": "Free 30 Days Delivery Returns. Details",
+    "Related Items": "Related Items",
+    "Colours": "Colours",
+    "Size": "Size"
+  },
+
+  "myAccount": {
+    "welcome": "Welcome!",
+    "Manage My Account": "Manage My Account",
+    "My Profile": "My Profile",
+    "Address Book": "Address Book",
+    "My Payment Options": "My Payment Options",
+    "My Orders": "My Orders",
+    "Order": "Order",
+    "My Returns": "My Returns",
+    "My Cancellations": "My Cancellations",
+    "My WishList": "My WishList",
+    "Edit Your Profile": "Edit Your Profile",
+    "Name": "First Name",
+    "Last Name": "Last Name",
+    "Email": "Email",
+    "Address": "Address",
+    "Password Changes": "Password Changes",
+    "Current Password": "Current Password",
+    "New Password": "New Password",
+    "Confirm New Password": "Confirm New Password",
+    "Cancel": "Cancel",
+    "Save Changes": "Save Changes",
+    "Add New Address": "Add New Address",
+    "No Saved Addresses yet": "No Saved Addresses yet",
+    "No payment methods added yet": "No payment methods added yet",
+    "Loading orders": "Loading orders...",
+    "You haven't placed any orders yet": "You haven't placed any orders yet.",
+    "View Details": "View Details",
+    "No returns yet": "No returns yet",
+    "No cancellations yet": "No cancellations yet"
+  },
+
+  "checkout": {
+    "View Cart": "View Cart",
+    "CheckOut": "CheckOut",
+    "title": "Billing Details",
+    "name": "First Name",
+    "First name is required": "First name is required",
+    "Company Name": "Company Name",
+    "Street Address": "Street Address",
+    "Street address is required": "Street address is required",
+    "Apartment": "Apartment, floor, etc. (optional)",
+    "Town/City": "Town/City",
+    "Town/City is required": "Town/City is required",
+    "email": "Email Address",
+    "Email is required": "Email is required",
+    "Invalid email address": "Invalid email address",
+    "phone": "Phone Number",
+    "Phone number is required": "Phone number is required",
+    "placeOrder": "Place Order",
+    "Save this information for faster check-out next time": "Save this information for faster check-out next time",
+    "Cash on Delivery": "Cash on Delivery",
+    "Bank": "Bank",
+    "Card number": "Card number",
+    "Security code": "Security code",
+    "Expiration date (MM / YY)": "Expiration date (MM / YY)",
+    "Name on card": "Name on card"
+  },
+
+  "404": {
+    "title": "404 Not Found",
+    "description": "Your visited page not found. You may go home page.",
+    "goHome": "Back to home page"
+  },
+
+  "bill": {
+    "title": "Order Confirmation",
+    "billingDetails": "Billing Details",
+    "orderItems": "Order Items",
+    "payment": "Payment",
+    "total": "Total"
+  }
+}

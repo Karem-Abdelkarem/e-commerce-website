@@ -1,0 +1,394 @@
+{
+  "dir": "ltr",
+  "topHeader": "Sommerschlussverkauf für alle Badeanzüge und kostenloser Expressversand – 50 % Rabatt!",
+  "shop": "Jetzt einkaufen",
+
+  "home": "Startseite",
+  "contact": "Kontakt",
+  "about": "Über uns",
+  "signUp": "Registrieren",
+  "account": "Mein Konto",
+
+  "What are you looking for?": "Wonach suchen Sie?",
+
+  "Manage my account": "Mein Konto verwalten",
+  "My orders": "Meine Bestellungen",
+  "My cancellations": "Meine Stornierungen",
+  "My reviews": "Meine Bewertungen",
+  "Log out": "Abmelden",
+
+  "Woman's Fashion": "Damenmode",
+  "Men's Fashion": "Herrenmode",
+  "Electronics": "Elektronik",
+  "Home & Lifestyle": "Haus & Lifestyle",
+  "Medicine": "Medizin",
+  "Sports & Outdoor": "Sport & Outdoor",
+  "Baby's & Toys": "Baby & Spielzeug",
+  "Groceries & Pets": "Lebensmittel & Haustiere",
+  "Health & Beauty": "Gesundheit & Schönheit",
+
+  "iPhone 14 Series": "iPhone 14 Serie",
+  "macbook": "MacBook",
+  "tablet": "Tablet",
+  "Up to 10% off Voucher": "Gutschein für bis zu 10 % Rabatt",
+  "Shop Now": "Jetzt kaufen",
+
+  "Today's": "Heute",
+  "Flash Sales": "Flash-Sales",
+  "Days": "Tage",
+  "Hours": "Stunden",
+  "Minutes": "Minuten",
+  "Seconds": "Sekunden",
+
+  "new": "Neu",
+  "addToCart": "In den Warenkorb",
+  "View All Products": "Alle Produkte anzeigen",
+
+  "productsArray": [
+    {
+      "title": "Elektroauto für Kinder",
+      "type": "Gaming",
+      "details": "Ein aufregendes Elektroauto für Kinder, um stilvoll herumzufahren – sorgt für stundenlangen Spielspaß."
+    },
+    {
+      "title": "CANON EOS DSLR Kamera",
+      "type": "Technik",
+      "details": "Halten Sie atemberaubende Fotos und Videos mit dieser professionellen Canon DSLR-Kamera fest – perfekt für Fotografie-Begeisterte."
+    },
+    {
+      "title": "Trockenfutter für Hunde",
+      "type": "Allgemein",
+      "details": "Nahrhaftes Trockenfutter aus hochwertigen Zutaten, damit Ihr Vierbeiner gesund und glücklich bleibt."
+    },
+    {
+      "title": "ASUS FHD Gaming-Laptop",
+      "type": "Technik",
+      "details": "Erleben Sie High-Performance-Gaming mit diesem ASUS FHD Gaming-Laptop, ausgestattet mit fortschrittlicher Grafik für flüssiges Gameplay."
+    },
+    {
+      "title": "Curology Produkt-Set",
+      "type": "Allgemein",
+      "details": "Ein komplettes Hautpflege-Set von Curology zum Reinigen, Befeuchten und Schützen Ihrer Haut für ein strahlendes Aussehen."
+    },
+    {
+      "title": "GP11 Shooter USB Gamepad",
+      "type": "Gaming",
+      "details": "Verbessern Sie Ihr Spielerlebnis mit dem GP11 Shooter USB Gamepad, das durch hochwertige Verarbeitung und präzise Steuerung überzeugt."
+    },
+    {
+      "title": "Gesteppte Satinjacke",
+      "type": "Kleidung",
+      "details": "Bleiben Sie stylisch und warm mit dieser gesteppten Satinjacke, die jedem Outfit einen trendigen Touch verleiht."
+    },
+    {
+      "title": "Kleines Bücherregal",
+      "type": "Allgemein",
+      "details": "Organisieren Sie Ihre Bücher und Dekoartikel ordentlich in diesem kleinen Bücherregal, das ideal in kompakte Räume passt."
+    },
+    {
+      "title": "RGB Flüssigkeits-CPU-Kühler",
+      "type": "Technik",
+      "details": "Halten Sie Ihre CPU kühl mit diesem RGB-Flüssigkeitskühler, der über eine Hochleistungspumpe und anpassbare Beleuchtung verfügt."
+    },
+    {
+      "title": "Gucci Reisetasche",
+      "type": "Kleidung",
+      "details": "Reisen Sie mit Stil: Die Gucci Reisetasche aus erstklassigen Materialien vereint Langlebigkeit mit purem Luxus."
+    },
+    {
+      "title": "The North Mantel",
+      "type": "Kleidung",
+      "details": "Bleiben Sie warm und modisch mit dem 'The North' Mantel, der durch strapazierfähige Qualität und zeitloses Design besticht."
+    },
+    {
+      "title": "HAVIT HV-G92 Gamepad",
+      "type": "Gaming",
+      "details": "Genießen Sie reaktionsschnelle und präzise Steuerung mit dem HAVIT HV-G92 Gamepad, entwickelt für stundenlangen Gaming-Spaß."
+    },
+    {
+      "title": "Kabelgebundene AK-900 Tastatur",
+      "type": "Technik",
+      "details": "Tippen Sie schnell und präzise mit der kabelgebundenen AK-900 Tastatur in ergonomischem Design."
+    },
+    {
+      "title": "IPS LCD Gaming-Monitor",
+      "type": "Technik",
+      "details": "Tauchen Sie ein in Ihre Spiele mit dem IPS LCD Gaming-Monitor, der lebendige Farben und flüssige Bewegungen liefert."
+    },
+    {
+      "title": "S-Series Komfortstuhl",
+      "type": "Möbel",
+      "details": "Entspannen Sie im S-Series Komfortstuhl – ergonomisches Design und weiche Polsterung für langes, bequemes Sitzen."
+    },
+    {
+      "title": "JBL Boombox 2",
+      "type": "Neuheit",
+      "details": "Erleben Sie gewaltigen Sound mit der JBL Boombox 2 – robustes Design und lange Akkulaufzeit für Musikgenuss den ganzen Tag."
+    },
+    {
+      "title": "Parfüm",
+      "type": "Neuheit",
+      "details": "Dieses Parfüm ist eine Mischung aus Oud, Rose und Weihrauch – ein reicher, luxuriöser Duft, der den ganzen Tag hält."
+    },
+    {
+      "title": "PlayStation 5",
+      "type": "Neuheit",
+      "details": "Die schwarz-weiße Version der PS5 ist jetzt im Angebot erhältlich."
+    },
+    {
+      "title": "Lautsprecher",
+      "type": "Neuheit",
+      "details": "Hervorragende Klangqualität mit dem kabellosen Amazon-Lautsprecher."
+    },
+    {
+      "title": "Fußballschuhe",
+      "type": "Neuheit",
+      "details": "Die besten Fußballschuhe für Ihr Spiel – entdecken Sie hier unsere exklusive Kollektion."
+    }
+  ],
+
+  "Categories": "Kategorien",
+  "Browse By Category": "Nach Kategorie durchsuchen",
+
+  "categoriesArray": [
+    { "title": "Handy" },
+    { "title": "Computer" },
+    { "title": "Smartwatch" },
+    { "title": "Kamera" },
+    { "title": "Kopfhörer" },
+    { "title": "Gaming" },
+    { "title": "Möbel" },
+    { "title": "Kleidung" }
+  ],
+
+  "This Month": "Diesen Monat",
+  "Best Selling Products": "Bestseller-Produkte",
+  "View All": "Alle anzeigen",
+
+  "Enhance Your Music Experience": "Verbessern Sie Ihr Musikerlebnis",
+  "Buy Now": "Jetzt kaufen",
+
+  "Our Products": "Unsere Produkte",
+  "Explore Our Products": "Entdecken Sie unsere Produkte",
+
+  "Featured": "Angesagt",
+  "New Arrival": "Neuheiten",
+
+  "featuredArray": [
+    {
+      "title": "PlayStation 5",
+      "details": "Die schwarz-weiße Version der PS5 ist jetzt im Angebot."
+    },
+    {
+      "title": "Damen-Kollektionen",
+      "details": "Exklusive Damen-Kollektionen für einen ganz neuen Vibe."
+    },
+    {
+      "title": "Lautsprecher",
+      "details": "Kabellose Amazon-Lautsprecher"
+    },
+    {
+      "title": "Parfüm",
+      "details": "GUCCI INTENSE OUD EDP"
+    }
+  ],
+
+  "services": [
+    {
+      "value": "KOSTENLOSE UND SCHNELLE LIEFERUNG",
+      "description": "Kostenlose Lieferung für alle Bestellungen über 140 $"
+    },
+    {
+      "value": "24/7 KUNDENSERVICE",
+      "description": "Freundlicher Kundensupport rund um die Uhr"
+    },
+    {
+      "value": "GELD-ZURÜCK-GARANTIE",
+      "description": "Rückerstattung innerhalb von 30 Tagen"
+    }
+  ],
+
+  "Subscribe": "Abonnieren",
+  "Get 10% off your first order": "Erhalten Sie 10 % Rabatt auf Ihre erste Bestellung",
+  "Enter your email": "E-Mail-Adresse eingeben",
+
+  "Support": "Support",
+
+  "Account": "Konto",
+  "Login / Register": "Anmelden / Registrieren",
+  "Cart": "Warenkorb",
+  "Wishlist": "Wunschliste",
+  "Shop": "Shop",
+
+  "Quick Link": "Quick-Links",
+  "Privacy Policy": "Datenschutzrichtlinie",
+  "Terms Of Use": "Nutzungsbedingungen",
+  "FAQ": "FAQ",
+
+  "Download App": "App herunterladen",
+  "Save $3 with App New User Only": "3 $ sparen – nur für neue App-Nutzer",
+
+  "signup": {
+    "name": "Name",
+    "title": "Konto erstellen",
+    "subtitle": "Geben Sie unten Ihre Daten ein",
+    "haveAccount": "Haben Sie bereits ein Konto?",
+    "login": "Anmelden",
+    "email": "E-Mail oder Telefonnummer",
+    "password": "Passwort",
+    "creatAccount": "Konto erstellen",
+    "loading": "Wird erstellt...",
+    "googlebutton": "Mit Google registrieren"
+  },
+
+  "login": {
+    "title": "Bei Exclusive anmelden",
+    "forgotPassword": "Passwort vergessen?",
+    "loading": "Anmeldung läuft..."
+  },
+
+  "forgetPassword": {
+    "title": "Passwort vergessen",
+    "subtitle": "E-Mail eingeben, um Passwort zurückzusetzen",
+    "email": "E-Mail-Adresse",
+    "resetPassword": "Passwort zurücksetzen",
+    "loading": "Wird gesendet...",
+    "backToLogin": "Zurück zum Login"
+  },
+
+  "wishlist": {
+    "moveAllToBag": "Alle in den Warenkorb",
+    "emptyMessage": "Deine Wunschliste ist leer.",
+    "justForYou": "Nur für dich",
+    "seeAll": "Alle anzeigen"
+  },
+
+  "cart": {
+    "product": "Produkt",
+    "price": "Preis",
+    "quantity": "Menge",
+    "subtotal": "Zwischensumme",
+    "emptyMessage": "Dein Warenkorb ist leer",
+    "returnToShop": "Zurück zum Shop",
+    "updateCart": "Warenkorb aktualisieren",
+    "applyCoupon": "Gutschein einlösen",
+    "couponCode": "Gutscheincode",
+    "cartTotal": "Warenkorb-Gesamtsumme",
+    "shipping": "Versand",
+    "free": "Kostenlos",
+    "total": "Gesamtsumme",
+    "proceedToCheckout": "Zur Kasse gehen"
+  },
+
+  "Contact": {
+    "callToUs": "Rufen Sie uns an",
+    "we are available 24/7, 7 days a week": "Wir sind 24/7 für Sie erreichbar.",
+    "writeToUs": "Schreiben Sie uns",
+    "Fill out our form and we will contact you within 24 hours": "Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden.",
+    "name": "Ihr Name *",
+    "email": "Ihre E-Mail *",
+    "phone": "Ihre Telefonnummer *",
+    "message": "Ihre Nachricht",
+    "sendMessage": "Nachricht senden",
+    "Your Name is required": "Ihr Name ist erforderlich",
+    "Email is required": "E-Mail ist erforderlich",
+    "Email is not valid": "E-Mail-Adresse ist ungültig",
+    "Your Phone is required": "Telefonnummer ist erforderlich",
+    "Message is required": "Nachricht ist erforderlich",
+    "Message must be at least 10 characters": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+  },
+
+  "About": {
+    "title": "Unsere Geschichte",
+    "description_1": "Exclusive wurde 2015 gegründet und ist Südasiens führender Online-Marktplatz mit einer aktiven Präsenz in Bangladesch. Unterstützt durch eine breite Palette an maßgeschneiderten Marketing-, Daten- und Servicelösungen, hat Exclusive 10.500 Verkäufer, 300 Marken und bedient 3 Millionen Kunden in der gesamten Region.",
+    "description_2": "Exclusive bietet mehr als 1 Million Produkte an und wächst sehr schnell. Das Sortiment umfasst diverse Kategorien von Konsumgütern bis hin zu Technik.",
+    "Sallers active our site": "Aktive Verkäufer",
+    "Monthly Product Sales": "Monatliche Verkäufe",
+    "Customer active in our site": "Aktive Kunden",
+    "Anual gross sale in our site": "Jährlicher Bruttoumsatz"
+  },
+
+  "productDetails": {
+    "In Stock": "Auf Lager",
+    "Free Delivery": "Kostenlose Lieferung",
+    "Enter your postal code for Delivery Availability": "Postleitzahl für Lieferverfügbarkeit eingeben",
+    "Return Delivery": "Rücksendung",
+    "Free 30 Days Delivery Returns. Details": "Kostenlose Rücksendung innerhalb von 30 Tagen. Details",
+    "Related Items": "Ähnliche Artikel",
+    "Colours": "Farben",
+    "Size": "Größe"
+  },
+
+  "myAccount": {
+    "welcome": "Willkommen!",
+    "Manage My Account": "Mein Konto verwalten",
+    "My Profile": "Mein Profil",
+    "Address Book": "Adressbuch",
+    "My Payment Options": "Zahlungsarten",
+    "My Orders": "Meine Bestellungen",
+    "Order": "Bestellung",
+    "My Returns": "Meine Rücksendungen",
+    "My Cancellations": "Meine Stornierungen",
+    "My WishList": "Meine Wunschliste",
+    "Edit Your Profile": "Profil bearbeiten",
+    "Name": "Vorname",
+    "Last Name": "Nachname",
+    "Email": "E-Mail",
+    "Address": "Adresse",
+    "Password Changes": "Passwort ändern",
+    "Current Password": "Aktuelles Passwort",
+    "New Password": "Neues Passwort",
+    "Confirm New Password": "Neues Passwort bestätigen",
+    "Cancel": "Abbrechen",
+    "Save Changes": "Änderungen speichern",
+    "Add New Address": "Neue Adresse hinzufügen",
+    "No Saved Addresses yet": "Noch keine gespeicherten Adressen",
+    "No payment methods added yet": "Noch keine Zahlungsarten hinterlegt",
+    "Loading orders": "Bestellungen werden geladen...",
+    "You haven't placed any orders yet": "Sie haben noch keine Bestellungen aufgegeben.",
+    "View Details": "Details anzeigen",
+    "No returns yet": "Noch keine Rücksendungen",
+    "No cancellations yet": "Noch keine Stornierungen"
+  },
+
+  "checkout": {
+    "View Cart": "Warenkorb anzeigen",
+    "CheckOut": "Kasse",
+    "title": "Rechnungsdetails",
+    "name": "Vorname",
+    "First name is required": "Vorname ist erforderlich",
+    "Company Name": "Firmenname",
+    "Street Address": "Straße und Hausnummer",
+    "Street address is required": "Straße ist erforderlich",
+    "Apartment": "Wohnung, Etage, etc. (optional)",
+    "Town/City": "Stadt",
+    "Town/City is required": "Stadt ist erforderlich",
+    "email": "E-Mail-Adresse",
+    "Email is required": "E-Mail ist erforderlich",
+    "Invalid email address": "Ungültige E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "Phone number is required": "Telefonnummer ist erforderlich",
+    "placeOrder": "Bestellung aufgeben",
+    "Save this information for faster check-out next time": "Informationen für das nächste Mal speichern",
+    "Cash on Delivery": "Nachnahme",
+    "Bank": "Banküberweisung",
+    "Card number": "Kartennummer",
+    "Security code": "Sicherheitscode",
+    "Expiration date (MM / YY)": "Ablaufdatum (MM / JJ)",
+    "Name on card": "Name auf der Karte"
+  },
+
+  "404": {
+    "title": "404 Nicht gefunden",
+    "description": "Die von Ihnen besuchte Seite wurde nicht gefunden. Sie können zur Startseite zurückkehren.",
+    "goHome": "Zurück zur Startseite"
+  },
+
+  "bill": {
+    "title": "Bestellbestätigung",
+    "billingDetails": "Rechnungsdetails",
+    "orderItems": "Bestellte Artikel",
+    "payment": "Zahlung",
+    "total": "Gesamt"
+  }
+}

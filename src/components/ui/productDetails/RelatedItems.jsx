@@ -1,6 +1,6 @@
 import ProductBadge from "../../product/ProductBadge";
 import { ITEMS } from "../../../data/products";
-import ProductCard from "../../product/productCard";
+import ProductCard from "../../product/ProductCard";
 import { useTranslation } from "react-i18next";
 
 const RelatedItems = ({ product }) => {

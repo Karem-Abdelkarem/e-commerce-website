@@ -1,16 +1,174 @@
-# React + Vite
+# 🛍️ E-Commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive E-Commerce web application built with React, Firebase, and TailwindCSS.  
+Users can browse products, manage cart & wishlist, place orders, and manage their account securely.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview  
+![Preview Screenshot](./public/preview.png)
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 https://exclusive-cs196bgpl-karem-abdelkarems-projects.vercel.app/
+
+---
+
+## ✨ Features
+
+- 🔐 Authentication (Register / Login / Logout)
+- 🛒 Add to Cart (Persistent per user)
+- ❤️ Wishlist (Persistent per user)
+- 👓 Product search
+- 📦 Place Orders
+- 📜 Order History
+- 👤 User Account Management
+- 🌍 Multi-language Support (i18n)
+- 📱 Fully Responsive Design
+- 🔒 Secure Firestore Rules
+
+---
+
+## 🧰 Tech Stack
+
+### Frontend
+- React (Vite)
+- React Router
+- Context API
+- TailwindCSS
+- shadcn/ui (Radix UI)
+- i18next
+- React hook form
+- React hot toast
+
+### Backend / Database
+- Firebase Authentication
+- Cloud Firestore
+
+### Deployment
+- Vercel
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── context/
+ ├── firebase/
+ ├── hooks/
+ └── assets/
+```
+
+---
+
+## 🔐 Firestore Structure
+
+### Collections
+
+- `users/{uid}`
+- `cart/{uid}`
+- `wishlist/{uid}`
+- `orders/{autoId}`
+
+
+```
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the root:
+
+```env
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+```
+
+For production (Vercel), add the same variables in:
+
+Project → Settings → Environment Variables
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run development server
+
+```bash
+npm run dev
+```
+
+### 4️⃣ Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 🔄 React Router (Vercel Fix)
+
+Create a `vercel.json` file in root:
+
+```json
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
+```
+
+---
+
+## 🔒 Security
+
+- Users can only access their own cart, wishlist, and orders.
+- Orders cannot be modified after creation.
+- Firestore rules enforce user ownership via `request.auth.uid`.
+
+---
+
+## 📌 Future Improvements
+
+- Admin dashboard
+- Product management panel
+- Stripe payment integration
+- Order status updates
+- Product search & filters
+
+---
+
+## 👨‍💻 Author
+
+Your Name  
+GitHub: https://github.com/Karem-Abdelkarem
+
+---
+
+## 📄 License
+
+This project is for educational and portfolio purposes.
